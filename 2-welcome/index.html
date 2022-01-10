@@ -7,6 +7,8 @@
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
   <!-- Вьюпорт -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Решает проблему с автомасштабированием на iOS -->
+  <meta name="x-apple-disable-message-reformatting" />
   <!-- Удаление стилизации номера телефона -->
   <meta content="telephone=no" name="format-detection" />
   <!-- Тег для нормальной работы IE -->
@@ -14,6 +16,68 @@
 
   <!-- Title для того, чтобы веб-версия была с заголовком во вкладке -->
   <title>Приветственное письмо</title>
+
+  <!-- Фикс для удаления подчёркивания гиперссылок в Outlook -->
+  <!--[if (mso 16)]>
+    <style type="text/css">
+      a {text-decoration: none;}
+    </style>
+  <![endif]-->
+  
+  <!-- Фикс для решения проблемы с надстрочными индексами в Outlook -->
+  <!--[if gte mso 9]>
+    <style>sup { font-size: 100% !important; }</style>
+  <![endif]-->
+
+  <!-- Фикс для решения проблемы масштабирования DPI в Outlook -->
+  <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+        <o:AllowPNG></o:AllowPNG>
+        <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+    </xml>
+  <![endif]-->
+
+  <style type="text/css">
+    @media only screen and (max-width:600px) {
+      #outlook a {
+        padding: 0;
+      }
+      .button {
+        mso-style-priority: 100 !important;
+        text-decoration: none !important;
+      }
+      .content-table {
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+      }
+
+      .menu {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        text-align: center !important;
+      }
+
+      .menu-link-wrap {
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+        padding-bottom: 16px !important;
+        text-align: center !important;
+      }
+
+      .menu-link {
+        font-size: 18px !important;
+        line-height: 21px !important;
+      }
+      .mobile-content-p40t {
+        padding-top: 40px !important;
+      }
+      .mobile-content-p32b {
+        padding-bottom: 32px !important;
+      }
+    }
+  </style>
 </head>
 
 <body style="width:100%;padding:0;Margin:0;">
@@ -41,7 +105,7 @@
                       <table width="100%" cellspacing="0" cellpadding="0" border="0">
                         <!-- Лого -->
                         <tr>
-                          <td align="center"
+                          <td class="mobile-content-p40t mobile-content-p32b" align="center"
                             style="Margin:0;padding-top:57px;padding-bottom:57px;padding-left:32px;padding-right:32px;">
                             <a href="#" target="_blank" style="font-size: 0; text-decoration:none;" title="Перейти на сайт PlayHtml">
                             <img  style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" src="https://raw.githubusercontent.com/Bachinina/816175-play-html-1/master/2-welcome/img/logo.png" alt="PlayHtml" width="140" height="24" />
@@ -54,63 +118,63 @@
                             <table cellpadding="0" cellspacing="0" align="center"
                               style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;width:100%;">
                               <tr>
-                                <td align="left"
+                                <td class="menu" align="left"
                                   style="padding:0;Margin:0;background-color: #FFFFFF; font-size:0;padding-left:32px;padding-right:32px;padding-bottom:26px;">
                                   <!--[if mso]>
                               <table border="0" cellspacing="0" cellpadding="0">
                                 <tr>
-                                  <td width="134" style="vertical-align:top; font-size:0; line-height:0;">
+                                  <td class="menu-link-wrap" width="134" style="vertical-align:top; font-size:0; line-height:0;">
                                     <![endif]-->
-                                  <div align="center"
+                                  <div class="menu-link-wrap" align="center"
                                     style="display:inline-block; max-width:134px; vertical-align:top;width: 100%;">
 
                                     <table width="100%" cellspacing="0" cellpadding="0" border="0">
                                       <tr>
                                         <td>
-                                          <a href="#" target="_blank" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;font-size:16px;line-height:19px;text-decoration:none;color:#FF4B33;"><b>КУРСЫ</b></a>
+                                          <a class="menu-link" href="#" target="_blank" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;font-size:16px;line-height:19px;text-decoration:none;color:#FF4B33;"><b>КУРСЫ</b></a>
                                         </td>
                                       </tr>
                                     </table>
                                   </div>
                                   <!--[if mso]>
                                   </td>
-                                  <td width="134" style="vertical-align:top; font-size:0; line-height:0;">
+                                  <td class="menu-link-wrap" width="134" style="vertical-align:top; font-size:0; line-height:0;">
                                     <![endif]-->
-                                  <div align="left"
+                                  <div class="menu-link-wrap" align="left"
                                     style="display:inline-block; max-width:134px; vertical-align:top;width: 100%;">
                                     <table width="100%" cellspacing="0" cellpadding="0" border="0">
                                       <tr>
                                         <td>
-                                          <a href="#" target="_blank" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;font-size:16px;line-height:19px;text-decoration:none;color:#0B379B;"><b>ВЕБИНАРЫ</b></a>
+                                          <a class="menu-link" href="#" target="_blank" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;font-size:16px;line-height:19px;text-decoration:none;color:#0B379B;"><b>ВЕБИНАРЫ</b></a>
                                         </td>
                                       </tr>
                                     </table>
                                   </div>
                                   <!--[if mso]>
                                   </td>
-                                  <td width="134" style="vertical-align:top; font-size:0; line-height:0;">
+                                  <td class="menu-link-wrap" width="134" style="vertical-align:top; font-size:0; line-height:0;">
                                     <![endif]-->
-                                  <div align="left"
+                                  <div class="menu-link-wrap" align="left"
                                     style="display:inline-block; max-width:134px; vertical-align:top;width: 100%;">
                                     <table width="100%" cellspacing="0" cellpadding="0" border="0">
                                       <tr>
                                         <td>
-                                          <a href="#" target="_blank" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;font-size:16px;line-height:19px;text-decoration:none;color:#02BAD3;"><b>О ШКОЛЕ</b></a>
+                                          <a class="menu-link" href="#" target="_blank" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;font-size:16px;line-height:19px;text-decoration:none;color:#02BAD3;"><b>О ШКОЛЕ</b></a>
                                         </td>
                                       </tr>
                                     </table>
                                   </div>
                                   <!--[if mso]>
                                   </td>
-                                  <td width="134" style="vertical-align:top; font-size:0; line-height:0;">
+                                  <td class="menu-link-wrap" width="134" style="vertical-align:top; font-size:0; line-height:0;">
                                     <![endif]-->
-                                  <div align="left"
+                                  <div class="menu-link-wrap" align="left"
                                     style="display:inline-block; max-width:134px; vertical-align:top;width: 100%;">
 
                                     <table width="100%" cellspacing="0" cellpadding="0" border="0">
                                       <tr>
                                         <td>
-                                          <a href="#" target="_blank" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;font-size:16px;line-height:19px;text-decoration:none;color:#FFC81A;"><b>РАСПРОДАЖА</b></a>
+                                          <a class="menu-link" href="#" target="_blank" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;font-size:16px;line-height:19px;text-decoration:none;color:#FFC81A;"><b>РАСПРОДАЖА</b></a>
                                         </td>
                                       </tr>
                                     </table>
