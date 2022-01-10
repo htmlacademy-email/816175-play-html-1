@@ -7,6 +7,8 @@
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
   <!-- Вьюпорт -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Решает проблему с автомасштабированием на iOS -->
+  <meta name="x-apple-disable-message-reformatting" />
   <!-- Удаление стилизации номера телефона -->
   <meta content="telephone=no" name="format-detection" />
   <!-- Тег для нормальной работы IE -->
@@ -14,6 +16,86 @@
 
   <!-- Title для того, чтобы веб-версия была с заголовком во вкладке -->
   <title>Приветственное письмо</title>
+
+  <!-- Фикс для удаления подчёркивания гиперссылок в Outlook -->
+  <!--[if (mso 16)]>
+    <style type="text/css">
+      a {text-decoration: none;}
+    </style>
+  <![endif]-->
+
+  <!-- Фикс для решения проблемы с надстрочными индексами в Outlook -->
+  <!--[if gte mso 9]>
+    <style>sup { font-size: 100% !important; }</style>
+  <![endif]-->
+
+  <!-- Фикс для решения проблемы масштабирования DPI в Outlook -->
+  <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+        <o:AllowPNG></o:AllowPNG>
+        <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+    </xml>
+  <![endif]-->
+
+  <style type="text/css">
+    @media only screen and (max-width:600px) {
+      .content-left,
+      .content-right {
+        width: 100% !important
+      }
+
+      .content table,
+      .content {
+        width: 100% !important;
+        max-width: 600px !important
+      }
+
+      .content-table {
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+      }
+
+      .menu {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        padding-bottom: 16px !important;
+        text-align: center !important;
+      }
+
+      .menu-link-wrap {
+        padding-left: 13px !important;
+        padding-right: 13px !important;
+        padding-bottom: 16px !important;
+        text-align: center !important;
+        width: auto !important;
+      }
+
+      .menu-link {
+        font-size: 18px !important;
+        line-height: 21px !important;
+      }
+
+      .mobile-content-p40t {
+        padding-top: 40px !important;
+      }
+
+      .mobile-content-p32b {
+        padding-bottom: 32px !important;
+      }
+    }
+
+    #outlook a {
+      padding: 0;
+    }
+
+    .button {
+      mso-style-priority: 100 !important;
+      text-decoration: none !important;
+    }
+
+  </style>
 </head>
 
 <body style="width:100%;padding:0;Margin:0;">
@@ -28,666 +110,792 @@
     <table class="content-wrapper" width="100%" cellspacing="0" cellpadding="0" border="0">
       <tr>
         <td>
-          <!-- Шапка -->
-          <table width="100%" cellspacing="0" cellpadding="0" border="0">
+          <table cellpadding="0" cellspacing="0" border="0" class="content" align="center"
+            style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;table-layout:fixed !important;width:100%;">
             <tr>
-              <td>
-                <!-- Таблица центровщик -->
-                <table bgcolor="#ffffff" class="content-body" align="center" cellpadding="0" cellspacing="0"
-                  style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;background-color:#FFFFFF;width:600px;">
+              <td align="center" style="padding:0;Margin:0;">
+                <!-- Шапка -->
+                <table width="100%" cellspacing="0" cellpadding="0" border="0">
                   <tr>
-                    <td align="center" style="Margin:0;">
-                      <!-- Шапка -->
-                      <table width="100%" cellspacing="0" cellpadding="0" border="0">
-                        <!-- Лого -->
+                    <td>
+                      <!-- Таблица центровщик -->
+                      <table bgcolor="#ffffff" class="content-body" align="center" cellpadding="0" cellspacing="0"
+                        style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;background-color:#FFFFFF;width:600px;">
                         <tr>
-                          <td align="center"
-                            style="Margin:0;padding-top:57px;padding-bottom:57px;padding-left:32px;padding-right:32px;">
-                            <a href="#" target="_blank" style="font-size: 0; text-decoration:none;" title="Перейти на сайт PlayHtml">
-                            <img  style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" src="https://raw.githubusercontent.com/Bachinina/816175-play-html-1/master/2-welcome/img/logo.png" alt="PlayHtml" width="140" height="24" />
-                            </a>
+                          <td align="center" style="Margin:0;">
+                            <!-- Шапка -->
+                            <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                              <!-- Лого -->
+                              <tr>
+                                <td class="content-table mobile-content-p40t mobile-content-p32b" align="center"
+                                  style="Margin:0;padding-top:57px;padding-bottom:57px;padding-left:32px;padding-right:32px;">
+                                  <a href="#" target="_blank" style="font-size: 0; text-decoration:none;"
+                                    title="Перейти на сайт PlayHtml">
+                                    <img
+                                      style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic"
+                                      src="https://raw.githubusercontent.com/Bachinina/816175-play-html-1/master/2-welcome/img/logo.png"
+                                      alt="PlayHtml" width="140" height="24" />
+                                  </a>
+                                </td>
+                              </tr>
+                              <!-- Меню -->
+                              <tr>
+                                <td>
+                                  <table cellpadding="0" cellspacing="0" align="center"
+                                    style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;width:100%;">
+                                    <tr>
+                                      <td class="menu" align="left"
+                                        style="padding:0;Margin:0;background-color: #FFFFFF; font-size:0;padding-left:32px;padding-right:32px;padding-bottom:26px;">
+                                        <!--[if mso]>
+                              <table border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                  <td width="134" style="vertical-align:top; font-size:0; line-height:0;">
+                                    <![endif]-->
+                                        <div class="menu-link-wrap" align="center"
+                                          style="display:inline-block; max-width:134px; vertical-align:top;width: 100%;">
+
+                                          <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                            <tr>
+                                              <td>
+                                                <a class="menu-link" href="#" target="_blank"
+                                                  style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;font-size:16px;line-height:19px;text-decoration:none;color:#FF4B33;"><b>КУРСЫ</b></a>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </div>
+                                        <!--[if mso]>
+                                  </td>
+                                  <td width="134" style="vertical-align:top; font-size:0; line-height:0;">
+                                    <![endif]-->
+                                        <div class="menu-link-wrap" align="left"
+                                          style="display:inline-block; max-width:134px; vertical-align:top;width: 100%;">
+                                          <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                            <tr>
+                                              <td>
+                                                <a class="menu-link" href="#" target="_blank"
+                                                  style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;font-size:16px;line-height:19px;text-decoration:none;color:#0B379B;"><b>ВЕБИНАРЫ</b></a>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </div>
+                                        <!--[if mso]>
+                                  </td>
+                                  <td width="134" style="vertical-align:top; font-size:0; line-height:0;">
+                                    <![endif]-->
+                                        <div class="menu-link-wrap" align="left"
+                                          style="display:inline-block; max-width:134px; vertical-align:top;width: 100%;">
+                                          <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                            <tr>
+                                              <td>
+                                                <a class="menu-link" href="#" target="_blank"
+                                                  style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;font-size:16px;line-height:19px;text-decoration:none;color:#02BAD3;"><b>О
+                                                    ШКОЛЕ</b></a>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </div>
+                                        <!--[if mso]>
+                                  </td>
+                                  <td width="134" style="vertical-align:top; font-size:0; line-height:0;">
+                                    <![endif]-->
+                                        <div class="menu-link-wrap" align="left"
+                                          style="display:inline-block; max-width:134px; vertical-align:top;width: 100%;">
+
+                                          <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                            <tr>
+                                              <td>
+                                                <a class="menu-link" href="#" target="_blank"
+                                                  style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;font-size:16px;line-height:19px;text-decoration:none;color:#FFC81A;"><b>РАСПРОДАЖА</b></a>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </div>
+                                        <!--[if mso]>
+                                  </td>
+                                </tr>
+                              </table>
+                            <![endif]-->
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
                           </td>
                         </tr>
-                        <!-- Меню -->
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+
+                <!-- Синий блок с текстом и картинкой -->
+                <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                  <tr>
+                    <td>
+                      <!-- Таблица центровщик -->
+                      <table bgcolor="#ffffff" class="content-body" align="center" cellpadding="0" cellspacing="0"
+                        style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;background-color:#FFFFFF;width:600px;">
+                        <tr>
+                          <td align="center"
+                            style="Margin:0;padding-left:32px;padding-right:32px;background-color: #0B379B">
+
+                            <table cellpadding="0" cellspacing="0" align="center"
+                              style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;width:100%;">
+                              <tr>
+                                <td align="left" style="padding:0;Margin:0;background-color: #0B379B; font-size:0;">
+                                  <!--[if mso]>
+                              <table border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                  <td width="361" style="vertical-align:top; font-size:0; line-height:0;">
+                                    <![endif]-->
+                                  <div align="center"
+                                    style="display:inline-block; max-width:361px; vertical-align:top;width: 100%;">
+                                    <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                      <tr>
+                                        <td style="padding-top:32px;padding-bottom: 32px;">
+                                          <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                            <tr>
+                                              <td style="padding-bottom: 26px;">
+                                                <p
+                                                  style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:18px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:21px;color:#13D6C3;">
+                                                  <b>Здравствуйте, {{name}}</b></p>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td style="padding-bottom: 26px;">
+                                                <p
+                                                  style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:18px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:21px;color:#FFFFFF;">
+                                                  Благодарим вас за&nbsp;регистрацию на&nbsp;курс «Начальный html+css».
+                                                </p>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td>
+                                                <p
+                                                  style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:18px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:21px;color:#FFFFFF;">
+                                                  Курс стартует 1 июля в&nbsp;17.00
+                                                  по&nbsp;московскому времени.
+                                                  Письма
+                                                  со&nbsp;ссылками для входа в&nbsp;кабинет придут на&nbsp;указанную
+                                                  почту за&nbsp;день до&nbsp;старта курса.</p>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </div>
+                                  <!--[if mso]>
+                                  </td>
+                                  <td width="175" style="vertical-align:top; font-size:0; line-height:0;">
+                                    <![endif]-->
+                                  <div align="left"
+                                    style="display:inline-block; max-width:175px; vertical-align:top;width: 100%;">
+                                    <!-- Картинка -->
+                                    <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                      <tr>
+                                        <td>
+                                          <img
+                                            style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic"
+                                            src="https://raw.githubusercontent.com/Bachinina/816175-play-html-1/master/2-welcome/img/registration.png"
+                                            alt="Регистрация" width="175" height="269" />
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </div>
+                                  <!--[if mso]>
+                                  </td>
+                                </tr>
+                              </table>
+                            <![endif]-->
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+
+                <!-- Описание -->
+                <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                  <tr>
+                    <td>
+                      <!-- Таблица центровщик -->
+                      <table bgcolor="#ffffff" class="content-body" align="center" cellpadding="0" cellspacing="0"
+                        style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;background-color:#FFFFFF;width:600px;">
+                        <tr>
+                          <td align="center"
+                            style="Margin:0;padding-top:48px;padding-bottom:48px;padding-left:32px;padding-right:32px;">
+                            <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                              <tr>
+                                <td align="center" style="padding-bottom: 24px;">
+                                  <h2
+                                    style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:30px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:35px;color:#FF4B33;">
+                                    <b>Что вас ждет на&nbsp;курсе</b></h2>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="padding-bottom: 24px;">
+                                  <p
+                                    style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:18px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:21px;color:#141414;">
+                                    Вы будете изучать теорию и методику на&nbsp;примере учебного проекта, который
+                                    разработали наши
+                                    эксперты. А
+                                    применить полученные знания на&nbsp;практике вы сможете, выполняя задания
+                                    по&nbsp;личному проекту.
+                                  </p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="padding-bottom: 24px;">
+                                  <p
+                                    style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:18px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:21px;color:#141414;">
+                                    В&nbsp;этом вам будет помогать наставник - опытный специалист, который проверит
+                                    домашние
+                                    задания и
+                                    поделится секретами мастерства. А если у&nbsp;вас останутся вопросы, наставник
+                                    сможет ответить
+                                    на&nbsp;них на&nbsp;консультации.</p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="padding-bottom: 24px;">
+                                  <p
+                                    style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:18px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:21px;color:#141414;">
+                                    После завершения курса вам нужно будет подготовить свой проект к&nbsp;защите —
+                                    убедиться, что
+                                    он
+                                    реализован
+                                    в&nbsp;соответствии с&nbsp;техническим заданием.</p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <p
+                                    style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:18px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:21px;color:#141414;">
+                                    Желаем вам продуктивной работы на интенсиве и успешной защиты. У вас всё получится,
+                                    мы в&nbsp;вас верим!
+                                  </p>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+
+
+                <!-- Ведущие курса -->
+                <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                  <tr>
+                    <td>
+                      <!-- Таблица центровщик -->
+                      <table bgcolor="#ffffff" class="content-body" align="center" cellpadding="0" cellspacing="0"
+                        style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;background-color:#FFFFFF;width:600px;">
+                        <tr>
+                          <td align="center" style="Margin:0;padding-bottom:48px;padding-left:32px;padding-right:32px;">
+
+                            <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                              <tr>
+                                <td align="center" style="padding-bottom: 24px;">
+                                  <h2
+                                    style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:30px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:35px;color:#13D6C3;">
+                                    <b>Ведущие курса</b></h2>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <table cellpadding="0" cellspacing="0" align="center"
+                                    style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;width:100%;">
+                                    <tr>
+                                      <td align="left"
+                                        style="padding:0;Margin:0;background-color: #FFFFFF; font-size:0;">
+                                        <!--[if mso]>
+                              <table border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                  <td width="184" style="vertical-align:top; font-size:0; line-height:0;">
+                                    <![endif]-->
+                                        <div align="center"
+                                          style="display:inline-block; max-width:184px; vertical-align:top;width: 100%;">
+                                          <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                            <tr>
+                                              <td style="padding-right: 16px; padding-bottom: 32px;">
+                                                <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                                  <tr>
+                                                    <td align="center" style="padding-bottom: 12px;">
+                                                      <img
+                                                        style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic"
+                                                        src="https://raw.githubusercontent.com/Bachinina/816175-play-html-1/master/2-welcome/img/portrait-1.png"
+                                                        alt="Антон Громов" width="88" height="88" />
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td align="center"
+                                                      style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:18px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:21px;color:#000000;">
+                                                      <b>Антон Громов</b>
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td align="center"
+                                                      style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:18px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:21px;color:#000000;">
+                                                      Фронтенд-разработчик в&nbsp;Cats Development
+                                                    </td>
+                                                  </tr>
+                                                </table>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </div>
+                                        <!--[if mso]>
+                                        </td>
+                                        <td width="184" style="vertical-align:top; font-size:0; line-height:0;">
+                                          <![endif]-->
+                                        <div align="center"
+                                          style="display:inline-block; max-width:184px; vertical-align:top;width: 100%;">
+                                          <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                            <tr>
+                                              <td style="padding-right: 16px;padding-bottom: 32px;">
+                                                <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                                  <tr>
+                                                    <td align="center" style="padding-bottom: 12px;">
+                                                      <img
+                                                        style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic"
+                                                        src="https://raw.githubusercontent.com/Bachinina/816175-play-html-1/master/2-welcome/img/portrait-2.png"
+                                                        alt="Илья Раменский" width="88" height="88" />
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td align="center"
+                                                      style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:18px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:21px;color:#000000;">
+                                                      <b>Илья Раменский</b>
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td align="center"
+                                                      style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:18px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:21px;color:#000000;">
+                                                      Team Lead в&nbsp;Lizard Software
+                                                    </td>
+                                                  </tr>
+                                                </table>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </div>
+                                        <!--[if mso]>
+                                        </td>
+                                        <td width="168" style="vertical-align:top; font-size:0; line-height:0;">
+                                          <![endif]-->
+                                        <div align="center"
+                                          style="display:inline-block; max-width:168px; vertical-align:top;width: 100%;">
+                                          <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                            <tr>
+                                              <td style="padding-bottom: 32px;">
+                                                <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                                  <tr>
+                                                    <td align="center" style="padding-bottom: 12px;">
+                                                      <img
+                                                        style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic"
+                                                        src="https://raw.githubusercontent.com/Bachinina/816175-play-html-1/master/2-welcome/img/portrait-3.png"
+                                                        alt="Игнатий Чубаров" width="88" height="88" />
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td align="center"
+                                                      style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:18px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:21px;color:#000000;">
+                                                      <b>Игнатий Чубаров</b>
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td align="center"
+                                                      style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:18px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:21px;color:#000000;">
+                                                      Преподаватель IT в&nbsp;РУИТ
+                                                    </td>
+                                                  </tr>
+                                                </table>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </div>
+                                        <!--[if mso]>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  <![endif]-->
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="padding-top: 16px;">
+                                  <p
+                                    style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:18px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:21px;color:#141414;">
+                                    Пока вы ждёте начала курса, вам могут быть интересны вебинары на&nbsp;разные темы,
+                                    которые
+                                    проходят на&nbsp;платформе ежедневно.</p>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+
+                <!-- Другие мероприятия -->
+                <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                  <tr>
+                    <td>
+                      <!-- Таблица центровщик -->
+                      <table bgcolor="#ffffff" class="content-body" align="center" cellpadding="0" cellspacing="0"
+                        style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;background-color:#FFFFFF;width:600px;">
+                        <tr>
+                          <td align="center" style="Margin:0;padding-left:16px;padding-right:16px;">
+                            <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                              <tr>
+                                <td align="center" style="padding-bottom: 24px;">
+                                  <h2
+                                    style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:30px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:35px;color:#0B379B;">
+                                    Другие мероприятия</h2>
+                                </td>
+                              </tr>
+                              <!-- Список мероприятий -->
+                              <tr>
+                                <td style="padding-bottom: 16px;">
+                                  <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                    <tr>
+                                      <td style="border: 1px solid #02BAD3; padding: 24px 16px;border-radius: 15px;">
+                                        <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                          <tr>
+                                            <td style="padding-bottom: 8px;">
+                                              <p
+                                                style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:24px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:28px;color:#02BAD3;">
+                                                <b>Тренды frontend-разработки</b></p>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td style="padding-bottom: 18px;">
+                                              <p
+                                                style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:19px;color:#141414;">
+                                                <b>20&nbsp;июня, 17:00</b></p>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td>
+                                              <p
+                                                style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:18px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:21px;color:#141414;">
+                                                Самые многообещающие направления развития
+                                                фронтенда в&nbsp;2020 году</p>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="padding-bottom: 16px;">
+                                  <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                    <tr>
+                                      <td style="border: 1px solid #02BAD3; padding: 24px 16px;border-radius: 15px;">
+                                        <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                          <tr>
+                                            <td style="padding-bottom: 8px; font-size: 24px;">
+                                              <p
+                                                style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:24px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:28px;color:#02BAD3;">
+                                                <b>Figma vs Photoshop</b></p>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td style="padding-bottom: 18px; font-size: 16px;">
+                                              <p
+                                                style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:19px;color:#141414;">
+                                                <b>21&nbsp;июня, 17:00</b></p>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td>
+                                              <p
+                                                style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:18px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:21px;color:#141414;">
+                                                Почему давно пора отказаться от&nbsp;последнего?</p>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                    <tr>
+                                      <td style="border: 1px solid #02BAD3; padding: 24px 16px;border-radius: 15px;">
+                                        <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                          <tr>
+                                            <td style="padding-bottom: 8px; font-size: 24px;">
+                                              <p
+                                                style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:24px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:28px;color:#02BAD3;">
+                                                <b>Что такое Git и как его использовать?</b></p>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td style="padding-bottom: 18px; font-size: 16px;">
+                                              <p
+                                                style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:19px;color:#141414;">
+                                                <b>22&nbsp;июня, 17:00</b></p>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td>
+                                              <p
+                                                style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:18px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:21px;color:#141414;">
+                                                Разберем тонкости использования самой
+                                                популярной системы контроля версий.</p>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="padding-bottom: 16px;padding-top: 32px;" align="center">
+                                  <a style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;font-size:18px;line-height:21px;text-decoration:none;color:#FFFFFF;border-width:8px 16px;display:inline-block;border-color:#FF4B33;background:#FF4B33;border-style:solid;border-radius: 5px;"
+                                    href="#" target="_blank">Все мероприятия</a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td align="center">
+                                  <img
+                                    style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic"
+                                    src="https://raw.githubusercontent.com/Bachinina/816175-play-html-1/master/2-welcome/img/events.png"
+                                    alt="Мероприятия" width="273" height="290" />
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+
+
+                <!-- Футер -->
+                <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                  <tr>
+                    <td>
+                      <!-- Таблица центровщик -->
+                      <table bgcolor="#ffffff" class="content-body" align="center" cellpadding="0" cellspacing="0"
+                        style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;background-color:#FFFFFF;width:600px;">
                         <tr>
                           <td>
                             <table cellpadding="0" cellspacing="0" align="center"
                               style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;width:100%;">
                               <tr>
                                 <td align="left"
-                                  style="padding:0;Margin:0;background-color: #FFFFFF; font-size:0;padding-left:32px;padding-right:32px;padding-bottom:26px;">
+                                  style="padding:0;Margin:0;background-color: #FFFFFF; font-size:0; padding-left:16px;padding-right:16px;padding-bottom:32px;">
                                   <!--[if mso]>
-                              <table border="0" cellspacing="0" cellpadding="0">
-                                <tr>
-                                  <td width="134" style="vertical-align:top; font-size:0; line-height:0;">
-                                    <![endif]-->
-                                  <div align="center"
-                                    style="display:inline-block; max-width:134px; vertical-align:top;width: 100%;">
-
-                                    <table width="100%" cellspacing="0" cellpadding="0" border="0">
-                                      <tr>
-                                        <td>
-                                          <a href="#" target="_blank" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;font-size:16px;line-height:19px;text-decoration:none;color:#FF4B33;"><b>КУРСЫ</b></a>
-                                        </td>
-                                      </tr>
-                                    </table>
-                                  </div>
-                                  <!--[if mso]>
-                                  </td>
-                                  <td width="134" style="vertical-align:top; font-size:0; line-height:0;">
-                                    <![endif]-->
-                                  <div align="left"
-                                    style="display:inline-block; max-width:134px; vertical-align:top;width: 100%;">
-                                    <table width="100%" cellspacing="0" cellpadding="0" border="0">
-                                      <tr>
-                                        <td>
-                                          <a href="#" target="_blank" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;font-size:16px;line-height:19px;text-decoration:none;color:#0B379B;"><b>ВЕБИНАРЫ</b></a>
-                                        </td>
-                                      </tr>
-                                    </table>
-                                  </div>
-                                  <!--[if mso]>
-                                  </td>
-                                  <td width="134" style="vertical-align:top; font-size:0; line-height:0;">
-                                    <![endif]-->
-                                  <div align="left"
-                                    style="display:inline-block; max-width:134px; vertical-align:top;width: 100%;">
-                                    <table width="100%" cellspacing="0" cellpadding="0" border="0">
-                                      <tr>
-                                        <td>
-                                          <a href="#" target="_blank" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;font-size:16px;line-height:19px;text-decoration:none;color:#02BAD3;"><b>О ШКОЛЕ</b></a>
-                                        </td>
-                                      </tr>
-                                    </table>
-                                  </div>
-                                  <!--[if mso]>
-                                  </td>
-                                  <td width="134" style="vertical-align:top; font-size:0; line-height:0;">
-                                    <![endif]-->
-                                  <div align="left"
-                                    style="display:inline-block; max-width:134px; vertical-align:top;width: 100%;">
-
-                                    <table width="100%" cellspacing="0" cellpadding="0" border="0">
-                                      <tr>
-                                        <td>
-                                          <a href="#" target="_blank" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;font-size:16px;line-height:19px;text-decoration:none;color:#FFC81A;"><b>РАСПРОДАЖА</b></a>
-                                        </td>
-                                      </tr>
-                                    </table>
-                                  </div>
-                                  <!--[if mso]>
-                                  </td>
-                                </tr>
-                              </table>
-                            <![endif]-->
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-          </table>
-
-          <!-- Синий блок с текстом и картинкой -->
-          <table width="100%" cellspacing="0" cellpadding="0" border="0">
-            <tr>
-              <td>
-                <!-- Таблица центровщик -->
-                <table bgcolor="#ffffff" class="content-body" align="center" cellpadding="0" cellspacing="0"
-                  style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;background-color:#FFFFFF;width:600px;">
-                  <tr>
-                    <td align="center"
-                      style="Margin:0;padding-left:32px;padding-right:32px;background-color: #0B379B">
-
-                      <table cellpadding="0" cellspacing="0" align="center"
-                        style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;width:100%;">
-                        <tr>
-                          <td align="left" style="padding:0;Margin:0;background-color: #0B379B; font-size:0;">
-                            <!--[if mso]>
-                              <table border="0" cellspacing="0" cellpadding="0">
-                                <tr>
-                                  <td width="361" style="vertical-align:top; font-size:0; line-height:0;">
-                                    <![endif]-->
-                            <div align="center"
-                              style="display:inline-block; max-width:361px; vertical-align:top;width: 100%;">
-                              <table width="100%" cellspacing="0" cellpadding="0" border="0">
-                                <tr>
-                                  <td style="padding-top:32px;padding-bottom: 32px;">
-                                    <table width="100%" cellspacing="0" cellpadding="0" border="0">
-                                      <tr>
-                                        <td style="padding-bottom: 26px;">
-                                          <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:18px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:21px;color:#13D6C3;"><b>Здравствуйте, {{name}}</b></p>
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <td style="padding-bottom: 26px;">
-                                          <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:18px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:21px;color:#FFFFFF;">Благодарим вас за&nbsp;регистрацию на&nbsp;курс «Начальный html+css».</p>
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <td>
-                                          <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:18px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:21px;color:#FFFFFF;">Курс стартует 1 июля в&nbsp;17.00
-                                            по&nbsp;московскому времени.
-                                            Письма
-                                            со&nbsp;ссылками для входа в&nbsp;кабинет придут на&nbsp;указанную почту за&nbsp;день до&nbsp;старта курса.</p>
-                                        </td>
-                                      </tr>
-                                    </table>
-                                  </td>
-                                </tr>
-                              </table>
-                            </div>
-                            <!--[if mso]>
-                                  </td>
-                                  <td width="175" style="vertical-align:top; font-size:0; line-height:0;">
-                                    <![endif]-->
-                            <div align="left"
-                              style="display:inline-block; max-width:175px; vertical-align:top;width: 100%;">
-                              <!-- Картинка -->
-                              <table width="100%" cellspacing="0" cellpadding="0" border="0">
-                                <tr>
-                                  <td>
-                                    <img  style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" src="https://raw.githubusercontent.com/Bachinina/816175-play-html-1/master/2-welcome/img/registration.png" alt="Регистрация" width="175" height="269" />
-                                  </td>
-                                </tr>
-                              </table>
-                            </div>
-                            <!--[if mso]>
-                                  </td>
-                                </tr>
-                              </table>
-                            <![endif]-->
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-          </table>
-
-          <!-- Описание -->
-          <table width="100%" cellspacing="0" cellpadding="0" border="0">
-            <tr>
-              <td>
-                <!-- Таблица центровщик -->
-                <table bgcolor="#ffffff" class="content-body" align="center" cellpadding="0" cellspacing="0"
-                  style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;background-color:#FFFFFF;width:600px;">
-                  <tr>
-                    <td align="center"
-                      style="Margin:0;padding-top:48px;padding-bottom:48px;padding-left:32px;padding-right:32px;">
-                      <table width="100%" cellspacing="0" cellpadding="0" border="0">
-                        <tr>
-                          <td align="center" style="padding-bottom: 24px;">
-                            <h2 style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:30px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:35px;color:#FF4B33;"><b>Что вас ждет на&nbsp;курсе</b></h2>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td style="padding-bottom: 24px;">
-                            <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:18px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:21px;color:#141414;">Вы будете изучать теорию и методику на&nbsp;примере учебного проекта, который разработали наши
-                              эксперты. А
-                              применить полученные знания на&nbsp;практике вы сможете, выполняя задания по&nbsp;личному проекту.
-                            </p>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td style="padding-bottom: 24px;">
-                            <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:18px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:21px;color:#141414;">В&nbsp;этом вам будет помогать наставник - опытный специалист, который проверит домашние
-                              задания и
-                              поделится секретами мастерства. А если у&nbsp;вас останутся вопросы, наставник сможет ответить
-                              на&nbsp;них на&nbsp;консультации.</p>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td style="padding-bottom: 24px;">
-                            <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:18px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:21px;color:#141414;">После завершения курса вам нужно будет подготовить свой проект к&nbsp;защите — убедиться, что
-                              он
-                              реализован
-                              в&nbsp;соответствии с&nbsp;техническим заданием.</p>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:18px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:21px;color:#141414;">Желаем вам продуктивной работы на интенсиве и успешной защиты. У вас всё получится, мы в&nbsp;вас верим!
-                            </p>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-          </table>
-
-
-          <!-- Ведущие курса -->
-          <table width="100%" cellspacing="0" cellpadding="0" border="0">
-            <tr>
-              <td>
-                <!-- Таблица центровщик -->
-                <table bgcolor="#ffffff" class="content-body" align="center" cellpadding="0" cellspacing="0"
-                  style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;background-color:#FFFFFF;width:600px;">
-                  <tr>
-                    <td align="center" style="Margin:0;padding-bottom:48px;padding-left:32px;padding-right:32px;">
-
-                      <table width="100%" cellspacing="0" cellpadding="0" border="0">
-                        <tr>
-                          <td align="center" style="padding-bottom: 24px;">
-                            <h2 style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:30px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:35px;color:#13D6C3;"><b>Ведущие курса</b></h2>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <table cellpadding="0" cellspacing="0" align="center"
-                              style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;width:100%;">
-                              <tr>
-                                <td align="left" style="padding:0;Margin:0;background-color: #FFFFFF; font-size:0;">
-                                  <!--[if mso]>
-                              <table border="0" cellspacing="0" cellpadding="0">
-                                <tr>
-                                  <td width="184" style="vertical-align:top; font-size:0; line-height:0;">
-                                    <![endif]-->
-                                  <div align="center"
-                                    style="display:inline-block; max-width:184px; vertical-align:top;width: 100%;">
-                                    <table width="100%" cellspacing="0" cellpadding="0" border="0">
-                                      <tr>
-                                        <td style="padding-right: 16px; padding-bottom: 32px;">
-                                          <table width="100%" cellspacing="0" cellpadding="0" border="0">
-                                            <tr>
-                                              <td align="center" style="padding-bottom: 12px;">
-                                                <img  style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" src="https://raw.githubusercontent.com/Bachinina/816175-play-html-1/master/2-welcome/img/portrait-1.png" alt="Антон Громов" width="88"
-                                                  height="88" />
-                                              </td>
-                                            </tr>
-                                            <tr>
-                                              <td align="center" style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:18px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:21px;color:#000000;">
-                                                <b>Антон Громов</b>
-                                              </td>
-                                            </tr>
-                                            <tr>
-                                              <td align="center" style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:18px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:21px;color:#000000;">
-                                                Фронтенд-разработчик в&nbsp;Cats Development
-                                              </td>
-                                            </tr>
-                                          </table>
-                                        </td>
-                                      </tr>
-                                    </table>
-                                  </div>
-                                  <!--[if mso]>
-                                        </td>
-                                        <td width="184" style="vertical-align:top; font-size:0; line-height:0;">
-                                          <![endif]-->
-                                  <div align="center"
-                                    style="display:inline-block; max-width:184px; vertical-align:top;width: 100%;">
-                                    <table width="100%" cellspacing="0" cellpadding="0" border="0">
-                                      <tr>
-                                        <td style="padding-right: 16px;padding-bottom: 32px;">
-                                          <table width="100%" cellspacing="0" cellpadding="0" border="0">
-                                            <tr>
-                                              <td align="center" style="padding-bottom: 12px;">
-                                                <img  style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" src="https://raw.githubusercontent.com/Bachinina/816175-play-html-1/master/2-welcome/img/portrait-2.png" alt="Илья Раменский" width="88"
-                                                  height="88" />
-                                              </td>
-                                            </tr>
-                                            <tr>
-                                              <td align="center" style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:18px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:21px;color:#000000;">
-                                                <b>Илья Раменский</b>
-                                              </td>
-                                            </tr>
-                                            <tr>
-                                              <td align="center" style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:18px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:21px;color:#000000;">
-                                                Team Lead в&nbsp;Lizard Software
-                                              </td>
-                                            </tr>
-                                          </table>
-                                        </td>
-                                      </tr>
-                                    </table>
-                                  </div>
-                                  <!--[if mso]>
-                                        </td>
-                                        <td width="168" style="vertical-align:top; font-size:0; line-height:0;">
-                                          <![endif]-->
-                                  <div align="center"
-                                    style="display:inline-block; max-width:168px; vertical-align:top;width: 100%;">
-                                    <table width="100%" cellspacing="0" cellpadding="0" border="0">
-                                      <tr>
-                                        <td style="padding-bottom: 32px;">
-                                          <table width="100%" cellspacing="0" cellpadding="0" border="0">
-                                            <tr>
-                                              <td align="center" style="padding-bottom: 12px;">
-                                                <img  style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" src="https://raw.githubusercontent.com/Bachinina/816175-play-html-1/master/2-welcome/img/portrait-3.png" alt="Игнатий Чубаров" width="88"
-                                                  height="88" />
-                                              </td>
-                                            </tr>
-                                            <tr>
-                                              <td align="center" style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:18px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:21px;color:#000000;">
-                                                <b>Игнатий Чубаров</b>
-                                              </td>
-                                            </tr>
-                                            <tr>
-                                              <td align="center" style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:18px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:21px;color:#000000;">
-                                                Преподаватель IT в&nbsp;РУИТ
-                                              </td>
-                                            </tr>
-                                          </table>
-                                        </td>
-                                      </tr>
-                                    </table>
-                                  </div>
-                                  <!--[if mso]>
-                                        </td>
-                                      </tr>
-                                    </table>
-                                  <![endif]-->
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td style="padding-top: 16px;">
-                            <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:18px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:21px;color:#141414;">Пока вы ждёте начала курса, вам могут быть интересны вебинары на&nbsp;разные темы, которые
-                              проходят на&nbsp;платформе ежедневно.</p>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-          </table>
-
-          <!-- Другие мероприятия -->
-          <table width="100%" cellspacing="0" cellpadding="0" border="0">
-            <tr>
-              <td>
-                <!-- Таблица центровщик -->
-                <table bgcolor="#ffffff" class="content-body" align="center" cellpadding="0" cellspacing="0"
-                  style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;background-color:#FFFFFF;width:600px;">
-                  <tr>
-                    <td align="center" style="Margin:0;padding-left:16px;padding-right:16px;">
-                      <table width="100%" cellspacing="0" cellpadding="0" border="0">
-                        <tr>
-                          <td align="center" style="padding-bottom: 24px;">
-                            <h2 style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:30px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:35px;color:#0B379B;">Другие мероприятия</h2>
-                          </td>
-                        </tr>
-                        <!-- Список мероприятий -->
-                        <tr>
-                          <td style="padding-bottom: 16px;">
-                            <table width="100%" cellspacing="0" cellpadding="0" border="0">
-                              <tr>
-                                <td style="border: 1px solid #02BAD3; padding: 24px 16px;border-radius: 15px;">
-                                  <table width="100%" cellspacing="0" cellpadding="0" border="0">
-                                    <tr>
-                                      <td style="padding-bottom: 8px;">
-                                        <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:24px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:28px;color:#02BAD3;"><b>Тренды frontend-разработки</b></p>
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td style="padding-bottom: 18px;">
-                                        <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:19px;color:#141414;"><b>20&nbsp;июня, 17:00</b></p>
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td>
-                                        <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:18px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:21px;color:#141414;">Самые многообещающие направления развития
-                                          фронтенда в&nbsp;2020 году</p>
-                                      </td>
-                                    </tr>
-                                  </table>
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td style="padding-bottom: 16px;">
-                            <table width="100%" cellspacing="0" cellpadding="0" border="0">
-                              <tr>
-                                <td style="border: 1px solid #02BAD3; padding: 24px 16px;border-radius: 15px;">
-                                  <table width="100%" cellspacing="0" cellpadding="0" border="0">
-                                    <tr>
-                                      <td style="padding-bottom: 8px; font-size: 24px;">
-                                        <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:24px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:28px;color:#02BAD3;"><b>Figma vs Photoshop</b></p>
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td style="padding-bottom: 18px; font-size: 16px;">
-                                        <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:19px;color:#141414;"><b>21&nbsp;июня, 17:00</b></p>
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td>
-                                        <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:18px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:21px;color:#141414;">Почему давно пора отказаться от&nbsp;последнего?</p>
-                                      </td>
-                                    </tr>
-                                  </table>
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <table width="100%" cellspacing="0" cellpadding="0" border="0">
-                              <tr>
-                                <td style="border: 1px solid #02BAD3; padding: 24px 16px;border-radius: 15px;">
-                                  <table width="100%" cellspacing="0" cellpadding="0" border="0">
-                                    <tr>
-                                      <td style="padding-bottom: 8px; font-size: 24px;">
-                                        <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:24px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:28px;color:#02BAD3;"><b>Что такое Git и как его использовать?</b></p>
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td style="padding-bottom: 18px; font-size: 16px;">
-                                        <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:19px;color:#141414;"><b>22&nbsp;июня, 17:00</b></p>
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td>
-                                        <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:18px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:21px;color:#141414;">Разберем тонкости использования самой
-                                          популярной системы контроля версий.</p>
-                                      </td>
-                                    </tr>
-                                  </table>
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td style="padding-bottom: 16px;padding-top: 32px;" align="center">
-                            <a style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;font-size:18px;line-height:21px;text-decoration:none;color:#FFFFFF;border-width:8px 16px;display:inline-block;border-color:#FF4B33;background:#FF4B33;border-style:solid;border-radius: 5px;" href="#" target="_blank">Все мероприятия</a>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td align="center">
-                            <img  style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" src="https://raw.githubusercontent.com/Bachinina/816175-play-html-1/master/2-welcome/img/events.png" alt="Мероприятия" width="273" height="290" />
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-          </table>
-
-
-          <!-- Футер -->
-          <table width="100%" cellspacing="0" cellpadding="0" border="0">
-            <tr>
-              <td>
-                <!-- Таблица центровщик -->
-                <table bgcolor="#ffffff" class="content-body" align="center" cellpadding="0" cellspacing="0"
-                  style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;background-color:#FFFFFF;width:600px;">
-                  <tr>
-                    <td>
-                      <table cellpadding="0" cellspacing="0" align="center"
-                        style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;width:100%;">
-                        <tr>
-                          <td align="left"
-                            style="padding:0;Margin:0;background-color: #FFFFFF; font-size:0; padding-left:16px;padding-right:16px;padding-bottom:32px;">
-                            <!--[if mso]>
                               <table border="0" cellspacing="0" cellpadding="0">
                                 <tr>
                                   <td width="278" style="vertical-align:top; font-size:0; line-height:0;">
                                     <![endif]-->
-                            <div align="center"
-                              style="display:inline-block; max-width:278px; vertical-align:top;width: 100%;">
+                                  <div align="center"
+                                    style="display:inline-block; max-width:278px; vertical-align:top;width: 100%;">
 
-                              <!-- Контакты -->
-                              <table width="100%" cellspacing="0" cellpadding="0" border="0">
-                                <tr>
-                                  <td style="padding-bottom: 18px;">
-                                    <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:19px;color:#333333;"><b>Мы в социальных сетях</b></p>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td  style="padding-bottom: 24px;">
-                                    <table width="100%" cellspacing="0" cellpadding="0" border="0"
-                                      style="max-width: 152px;">
+                                    <!-- Контакты -->
+                                    <table width="100%" cellspacing="0" cellpadding="0" border="0">
                                       <tr>
-                                        <td>
-                                          <a href="#" target="_blank" title="Facebook">
-                                            <img  style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" src="https://raw.githubusercontent.com/Bachinina/816175-play-html-1/master/2-welcome/img/facebook.png" alt="Facebook" width="24" height="25" />
-                                          </a>
+                                        <td style="padding-bottom: 18px;">
+                                          <p
+                                            style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:19px;color:#333333;">
+                                            <b>Мы в социальных сетях</b></p>
                                         </td>
-                                        <td>
-                                          <a href="#" target="_blank" title="Instagram">
-                                            <img  style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" src="https://raw.githubusercontent.com/Bachinina/816175-play-html-1/master/2-welcome/img/inst.png" alt="Instagram" width="24" height="25" />
-                                          </a>
+                                      </tr>
+                                      <tr>
+                                        <td style="padding-bottom: 24px;">
+                                          <table width="100%" cellspacing="0" cellpadding="0" border="0"
+                                            style="max-width: 152px;">
+                                            <tr>
+                                              <td>
+                                                <a href="#" target="_blank" title="Facebook">
+                                                  <img
+                                                    style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic"
+                                                    src="https://raw.githubusercontent.com/Bachinina/816175-play-html-1/master/2-welcome/img/facebook.png"
+                                                    alt="Facebook" width="24" height="25" />
+                                                </a>
+                                              </td>
+                                              <td>
+                                                <a href="#" target="_blank" title="Instagram">
+                                                  <img
+                                                    style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic"
+                                                    src="https://raw.githubusercontent.com/Bachinina/816175-play-html-1/master/2-welcome/img/inst.png"
+                                                    alt="Instagram" width="24" height="25" />
+                                                </a>
+                                              </td>
+                                              <td>
+                                                <a href="#" target="_blank" title="Youtube">
+                                                  <img
+                                                    style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic"
+                                                    src="https://raw.githubusercontent.com/Bachinina/816175-play-html-1/master/2-welcome/img/youtube.png"
+                                                    alt="Youtube" width="24" height="25" />
+                                                </a>
+                                              </td>
+                                              <td>
+                                                <a href="#" target="_blank" title="Telegram">
+                                                  <img
+                                                    style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic"
+                                                    src="https://raw.githubusercontent.com/Bachinina/816175-play-html-1/master/2-welcome/img/telegram.png"
+                                                    alt="Telegram" width="24" height="25" />
+                                                </a>
+                                              </td>
+                                              <td>
+                                                <a href="#" target="_blank" title="Вконтакте">
+                                                  <img
+                                                    style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic"
+                                                    src="https://raw.githubusercontent.com/Bachinina/816175-play-html-1/master/2-welcome/img/vk.png"
+                                                    alt="Вконтакте" width="24" height="25" />
+                                                </a>
+                                              </td>
+                                            </tr>
+                                          </table>
                                         </td>
-                                        <td>
-                                          <a href="#" target="_blank" title="Youtube">
-                                            <img  style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" src="https://raw.githubusercontent.com/Bachinina/816175-play-html-1/master/2-welcome/img/youtube.png" alt="Youtube" width="24" height="25" />
-                                          </a>
+                                      </tr>
+                                      <tr>
+                                        <td style="padding-bottom: 10px;">
+                                          <p
+                                            style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:19px;color:#333333;">
+                                            <b>Свяжитесь с нами</b></p>
                                         </td>
-                                        <td>
-                                          <a href="#" target="_blank" title="Telegram">
-                                            <img  style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" src="https://raw.githubusercontent.com/Bachinina/816175-play-html-1/master/2-welcome/img/telegram.png" alt="Telegram" width="24" height="25" />
-                                          </a>
+                                      </tr>
+                                      <tr>
+                                        <td style="font-size: 14px;padding-bottom:8px;">
+                                          <a href="mailto:study@htmlacademy.ru" target="_blank" title="Написать нам"
+                                            style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;font-size:14px;line-height:16px;text-decoration:none;color:#13D6C3;">study@htmlacademy.ru</a>
                                         </td>
-                                        <td>
-                                          <a href="#" target="_blank" title="Вконтакте">
-                                            <img  style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" src="https://raw.githubusercontent.com/Bachinina/816175-play-html-1/master/2-welcome/img/vk.png" alt="Вконтакте" width="24" height="25" />
-                                          </a>
+                                      </tr>
+                                      <tr>
+                                        <td style="font-size: 14px;">
+                                          <a href="tel:88006907668" target="_blank" title="Позвонить нам"
+                                            style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;font-size:14px;line-height:16px;text-decoration:none;color:#13D6C3;">8-800-690-76-68</a>
                                         </td>
                                       </tr>
                                     </table>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td style="padding-bottom: 10px;">
-                                    <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:19px;color:#333333;"><b>Свяжитесь с нами</b></p>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td style="font-size: 14px;padding-bottom:8px;">
-                                    <a href="mailto:study@htmlacademy.ru" target="_blank"
-                                      title="Написать нам" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;font-size:14px;line-height:16px;text-decoration:none;color:#13D6C3;">study@htmlacademy.ru</a>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td style="font-size: 14px;">
-                                    <a href="tel:88006907668" target="_blank" title="Позвонить нам" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;font-size:14px;line-height:16px;text-decoration:none;color:#13D6C3;">8-800-690-76-68</a>
-                                  </td>
-                                </tr>
-                              </table>
-                            </div>
-                            <!--[if mso]>
+                                  </div>
+                                  <!--[if mso]>
                                   </td>
                                   <td width="258" style="vertical-align:top; font-size:0; line-height:0;">
                                     <![endif]-->
-                            <div align="left"
-                              style="display:inline-block; max-width:258px; vertical-align:top;width: 100%;">
-                              <!-- Ссылки -->
-                              <table width="100%" cellspacing="0" cellpadding="0" border="0">
-                                <tr>
-                                  <td style="font-size: 16px;padding-bottom: 18px;">
-                                    <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:19px;color:#333333;"><b>Полезные ссылки</b></p>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td style="padding-bottom:8px;">
-                                    <a href="#" target="_blank" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;font-size:14px;line-height:16px;text-decoration:underline;color:#141414;">Бесплатные вебинары</a>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td style="padding-bottom:8px;">
-                                    <a href="#" target="_blank" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;font-size:14px;line-height:16px;text-decoration:underline;color:#141414;">Обучающие курсы</a>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td style="padding-bottom:8px;">
-                                    <a href="#" target="_blank" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;font-size:14px;line-height:16px;text-decoration:underline;color:#141414;">Тесты</a>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td style="padding-bottom:8px;">
-                                    <a href="#" target="_blank" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;font-size:14px;line-height:16px;text-decoration:underline;color:#141414;">Наш блог</a>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td style="font-size: 14px;">
-                                    <a href="#" target="_blank" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;font-size:14px;line-height:16px;text-decoration:underline;color:#141414;">Истории студентов</a>
-                                  </td>
-                                </tr>
-                              </table>
-                            </div>
-                            <!--[if mso]>
+                                  <div align="left"
+                                    style="display:inline-block; max-width:258px; vertical-align:top;width: 100%;">
+                                    <!-- Ссылки -->
+                                    <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                      <tr>
+                                        <td style="font-size: 16px;padding-bottom: 18px;">
+                                          <p
+                                            style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:16px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:19px;color:#333333;">
+                                            <b>Полезные ссылки</b></p>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td style="padding-bottom:8px;">
+                                          <a href="#" target="_blank"
+                                            style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;font-size:14px;line-height:16px;text-decoration:underline;color:#141414;">Бесплатные
+                                            вебинары</a>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td style="padding-bottom:8px;">
+                                          <a href="#" target="_blank"
+                                            style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;font-size:14px;line-height:16px;text-decoration:underline;color:#141414;">Обучающие
+                                            курсы</a>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td style="padding-bottom:8px;">
+                                          <a href="#" target="_blank"
+                                            style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;font-size:14px;line-height:16px;text-decoration:underline;color:#141414;">Тесты</a>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td style="padding-bottom:8px;">
+                                          <a href="#" target="_blank"
+                                            style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;font-size:14px;line-height:16px;text-decoration:underline;color:#141414;">Наш
+                                            блог</a>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td style="font-size: 14px;">
+                                          <a href="#" target="_blank"
+                                            style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;font-size:14px;line-height:16px;text-decoration:underline;color:#141414;">Истории
+                                            студентов</a>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </div>
+                                  <!--[if mso]>
                                   </td>
                                 </tr>
                               </table>
                             <![endif]-->
+                                </td>
+                              </tr>
+                            </table>
                           </td>
                         </tr>
                       </table>
                     </td>
                   </tr>
                 </table>
-              </td>
-            </tr>
-          </table>
 
-          <!-- Служебная информация -->
-          <table width="100%" cellspacing="0" cellpadding="0" border="0">
-            <tr>
-              <td>
-                <!-- Таблица центровщик -->
-                <table bgcolor="#ffffff" class="content-body" align="center" cellpadding="0" cellspacing="0"
-                  style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;background-color:#FFFFFF;width:600px;">
+                <!-- Служебная информация -->
+                <table width="100%" cellspacing="0" cellpadding="0" border="0">
                   <tr>
-                    <td align="center"
-                      style="Margin:0;padding-left:16px;padding-right:16px;background-color:#FFFFFF;">
-                      <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                    <td>
+                      <!-- Таблица центровщик -->
+                      <table bgcolor="#ffffff" class="content-body" align="center" cellpadding="0" cellspacing="0"
+                        style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;background-color:#FFFFFF;width:600px;">
                         <tr>
-                          <td style="Margin:0;padding-top:32px;padding-bottom:32px;border-top: 1px solid #E0E0E0;">
+                          <td align="center"
+                            style="Margin:0;padding-left:16px;padding-right:16px;background-color:#FFFFFF;">
                             <table width="100%" cellspacing="0" cellpadding="0" border="0">
                               <tr>
-                                <td style="padding-bottom: 15px;">
-                                  <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:11px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:13px;color:#828282;">Вы получили это письмо, так как являетесь пользователем портала HTMLPlay.
-                                    Рассылка производится в&nbsp;соответствии с&nbsp;пользовательским соглашением.
-                                    Если вы не хотите получать рассылку, вы можете <a href="#" target="_blank" style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:11px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:13px;color:#828282;text-decoration:underline;">отписаться</a>
-                                    или <a href="#" target="_blank" style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:11px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:13px;color:#828282;text-decoration:underline;">настроить параметры</a>.</p>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:11px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:13px;color:#828282;">Если письмо отображается некорректно или вы хотите им поделиться, <a
-                                      href="#" target="_blank" style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:11px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:13px;color:#828282;text-decoration:underline;"> жмите
-                                      сюда</a>.</p>
+                                <td
+                                  style="Margin:0;padding-top:32px;padding-bottom:32px;border-top: 1px solid #E0E0E0;">
+                                  <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                    <tr>
+                                      <td style="padding-bottom: 15px;">
+                                        <p
+                                          style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:11px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:13px;color:#828282;">
+                                          Вы получили это письмо, так как являетесь пользователем портала HTMLPlay.
+                                          Рассылка производится в&nbsp;соответствии с&nbsp;пользовательским соглашением.
+                                          Если вы не хотите получать рассылку, вы можете <a href="#" target="_blank"
+                                            style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:11px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:13px;color:#828282;text-decoration:underline;">отписаться</a>
+                                          или <a href="#" target="_blank"
+                                            style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:11px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:13px;color:#828282;text-decoration:underline;">настроить
+                                            параметры</a>.</p>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <p
+                                          style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:11px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:13px;color:#828282;">
+                                          Если письмо отображается некорректно или вы хотите им поделиться, <a href="#"
+                                            target="_blank"
+                                            style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:11px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:13px;color:#828282;text-decoration:underline;">
+                                            жмите
+                                            сюда</a>.</p>
+                                      </td>
+                                    </tr>
+                                  </table>
                                 </td>
                               </tr>
                             </table>
