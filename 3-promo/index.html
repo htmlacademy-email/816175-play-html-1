@@ -44,7 +44,8 @@
 
       .content-left,
       .content-right {
-        width: 100% !important
+        width: 100% !important;
+        max-width: 100% !important;
       }
 
       .content table,
@@ -62,8 +63,13 @@
         padding-right: 16px !important;
       }
 
+      .adaptive-img {
+        max-width: 100% !important;
+        height: auto !important
+      }
+
       .mobile-content-p16t {
-        padding-top: 24px !important;
+        padding-top: 16px !important;
       }
 
       .mobile-content-p24t {
@@ -74,8 +80,25 @@
         padding-bottom: 24px !important;
       }
 
+      .mobile-content-p0b {
+        padding-bottom: 0 !important;
+      }
+
       .mobile-align-center {
         text-align: center !important;
+      }
+
+      .content .text-block {
+        max-width: 220px !important;
+      }
+
+      .text-block-wrap {
+        border-top-right-radius: 15px !important;
+      }
+
+      .content .course {
+        max-width: 152px !important;
+        padding-bottom: 40px !important;
       }
 
     }
@@ -239,7 +262,7 @@
                               <tr>
                                 <td>
                                   <table cellpadding="0" cellspacing="0" align="center"
-                                    style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;width:100%;border-top-left-radius: 15px;">
+                                    style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;width:100%;border-top-left-radius: 15px;border-top-right-radius: 15px;">
                                     <tr>
                                       <td align="left"
                                         style="padding:0;Margin:0;background-color: #FFFFFF; font-size:0;border-top-left-radius: 15px;border-top-right-radius: 15px;">
@@ -248,13 +271,14 @@
                                     <tr>
                                       <td width="284" style="vertical-align:top; font-size:0; line-height:0;">
                                         <![endif]-->
-                                        <div align="center"
+                                        <div class="content-left text-block-wrap" align="center"
                                           style="display:inline-block; max-width:284px; vertical-align:top;width: 100%;background:#FF4B33;border-top-left-radius: 15px;">
                                           <table width="100%" cellspacing="0" cellpadding="0" border="0">
                                             <tr>
-                                              <td
+                                              <td align="center"
                                                 style="padding-left: 32px;padding-top: 32px;padding-bottom: 32px;padding-right: 32px;">
-                                                <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                                <table class="text-block" width="100%" cellspacing="0" cellpadding="0"
+                                                  border="0">
                                                   <tr>
                                                     <td>
                                                       <h2
@@ -301,12 +325,12 @@
                                       </td>
                                       <td width="284" style="vertical-align:top; font-size:0; line-height:0;">
                                         <![endif]-->
-                                        <div align="left"
+                                        <div class="content-right" align="left"
                                           style="display:inline-block; max-width:284px; vertical-align:top;width: 100%;border-top-right-radius: 15px;">
                                           <!-- Картинка -->
-                                          <table width="100%" cellspacing="0" cellpadding="0" border="0" style="">
+                                          <table width="100%" cellspacing="0" cellpadding="0" border="0">
                                             <tr>
-                                              <td>
+                                              <td align="center">
                                                 <img
                                                   style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic"
                                                   src="https://raw.githubusercontent.com/Bachinina/816175-play-html-1/master/3-promo/img/action.png"
@@ -345,13 +369,12 @@
                           <td align="center"
                             style="Margin:0;padding-left:16px;padding-right:16px;padding-bottom: 24px; ">
                             <table bgcolor="#FFFFFF" width="100%" cellspacing="0" cellpadding="0" border="0"
-                              style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;background-color:#FFFFFF;border-bottom-right-radius:15px;border-bottom-left-radius:15px;border-radius:15px;">
+                              style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;background-color:#FFFFFF;border-bottom-right-radius:15px;border-bottom-left-radius:15px;">
                               <tr>
-                                <td style="padding-top:32px;padding-bottom:48px;">
+                                <td class="mobile-content-p16t" style="padding-top:32px;padding-bottom:48px;">
                                   <table width="100%" cellspacing="0" cellpadding="0" border="0">
                                     <tr>
-                                      <td style="padding-left:16px;padding-right:16px;padding-bottom:24px;"
-                                        align="center">
+                                      <td style="padding-left:16px;padding-right:16px;" align="center">
                                         <h2
                                           style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:24px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:28px;color:#141414;">
                                           <b>Курсы, участвующие в&nbsp;акции</b></h2>
@@ -370,11 +393,11 @@
                                           <tr>
                                             <td width="284" style="vertical-align:top; font-size:0; line-height:0;">
                                               <![endif]-->
-                                              <div align="center"
+                                              <div class="content-left" align="center"
                                                 style="display:inline-block; max-width:284px; vertical-align:top;width: 100%;">
                                                 <table width="100%" cellspacing="0" cellpadding="0" border="0">
                                                   <tr>
-                                                    <td style="padding: 0 28px;">
+                                                    <td style="padding-right:28px;padding-left:28px;padding-top: 32px;">
                                                       <!-- Курс -->
                                                       <table width="100%" cellspacing="0" cellpadding="0" border="0">
                                                         <tr>
@@ -406,7 +429,7 @@
                                                           <td style="padding-top:16px;" align="center">
                                                             <a href="#" target="_blank"
                                                               style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;font-size:18px;line-height:21px;text-decoration:none;color:#FFFFFF;border-width:8px 16px;display:inline-block;border-color:#0B379B;background:#0B379B;border-style:solid;border-radius: 5px;">Записаться
-                                                              на курс</a>
+                                                              на&nbsp;курс</a>
                                                           </td>
                                                         </tr>
                                                       </table>
@@ -418,11 +441,11 @@
                                               </td>
                                               <td width="284" style="vertical-align:top; font-size:0; line-height:0;">
                                                 <![endif]-->
-                                              <div align="center"
+                                              <div class="content-right" align="center"
                                                 style="display:inline-block; max-width:284px; vertical-align:top;width: 100%;">
                                                 <table width="100%" cellspacing="0" cellpadding="0" border="0">
                                                   <tr>
-                                                    <td style="padding: 0 28px;">
+                                                    <td style="padding-right:28px;padding-left:28px;padding-top: 32px;">
                                                       <!-- Курс -->
                                                       <table width="100%" cellspacing="0" cellpadding="0" border="0">
                                                         <tr>
@@ -454,7 +477,7 @@
                                                           <td style="padding-top:16px;" align="center">
                                                             <a href="#" target="_blank"
                                                               style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;font-size:18px;line-height:21px;text-decoration:none;color:#FFFFFF;border-width:8px 16px;display:inline-block;border-color:#0B379B;background:#0B379B;border-style:solid;border-radius: 5px;">Записаться
-                                                              на курс</a>
+                                                              на&nbsp;курс</a>
                                                           </td>
                                                         </tr>
                                                       </table>
@@ -472,17 +495,17 @@
                                           <!-- Ряд с 3-им и 4-ым курсами -->
                                           <tr>
                                             <td align="left"
-                                              style="padding:0;Margin:0;background-color: #FFFFFF; font-size:0; padding-top: 32px;">
+                                              style="padding:0;Margin:0;background-color: #FFFFFF; font-size:0;">
                                               <!--[if mso]>
                                         <table border="0" cellspacing="0" cellpadding="0">
                                           <tr>
                                             <td width="284" style="vertical-align:top; font-size:0; line-height:0;">
                                               <![endif]-->
-                                              <div align="center"
+                                              <div class="content-left" align="center"
                                                 style="display:inline-block; max-width:284px; vertical-align:top;width: 100%;">
                                                 <table width="100%" cellspacing="0" cellpadding="0" border="0">
                                                   <tr>
-                                                    <td style="padding: 0 28px;">
+                                                    <td style="padding-right:28px;padding-left:28px;padding-top: 32px;">
                                                       <table width="100%" cellspacing="0" cellpadding="0" border="0">
                                                         <tr>
                                                           <td align="center" height="110" valign="middle">
@@ -513,7 +536,7 @@
                                                           <td style="padding-top:16px;" align="center">
                                                             <a href="#" target="_blank"
                                                               style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;font-size:18px;line-height:21px;text-decoration:none;color:#FFFFFF;border-width:8px 16px;display:inline-block;border-color:#0B379B;background:#0B379B;border-style:solid;border-radius: 5px;">Записаться
-                                                              на курс</a>
+                                                              на&nbsp;курс</a>
                                                           </td>
                                                         </tr>
                                                       </table>
@@ -525,11 +548,11 @@
                                               </td>
                                               <td width="284" style="vertical-align:top; font-size:0; line-height:0;">
                                                 <![endif]-->
-                                              <div align="center"
+                                              <div class="content-right" align="center"
                                                 style="display:inline-block; max-width:284px; vertical-align:top;width: 100%;">
                                                 <table width="100%" cellspacing="0" cellpadding="0" border="0">
                                                   <tr>
-                                                    <td style="padding: 0 28px;">
+                                                    <td style="padding-right:28px;padding-left:28px;padding-top: 32px;">
                                                       <!-- Курс -->
                                                       <table width="100%" cellspacing="0" cellpadding="0" border="0">
                                                         <tr>
@@ -561,7 +584,7 @@
                                                           <td style="padding-top:16px;" align="center">
                                                             <a href="#" target="_blank"
                                                               style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;font-size:18px;line-height:21px;text-decoration:none;color:#FFFFFF;border-width:8px 16px;display:inline-block;border-color:#0B379B;background:#0B379B;border-style:solid;border-radius: 5px;">Записаться
-                                                              на курс</a>
+                                                              на&nbsp;курс</a>
                                                           </td>
                                                         </tr>
                                                       </table>
@@ -693,7 +716,7 @@
                                             <td align="center" style="padding-top:40px;">
                                               <a href="#" target="_blank"
                                                 style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:'trebuchet ms', tahoma, sans-serif;font-size:18px;line-height:21px;text-decoration:none;color:#FFFFFF;border-width:8px 16px;display:inline-block;border-color:#FF4B33;background:#FF4B33;border-style:solid;border-radius: 5px;">Записаться
-                                                на курс</a>
+                                                на&nbsp;курс</a>
                                             </td>
                                           </tr>
                                         </table>
@@ -727,27 +750,27 @@
                                   <table cellpadding="0" cellspacing="0" align="center"
                                     style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0px;width:100%;">
                                     <tr>
-                                      <td align="center" style="padding-bottom:48px;">
+                                      <td class="mobile-content-p24b" align="center" style="padding-bottom:48px;">
                                         <h2
                                           style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:24px;font-family:'trebuchet ms', tahoma, sans-serif;line-height:28px;color:#141414;">
                                           <b>Популярные курсы</b></h2>
                                       </td>
                                     </tr>
                                     <tr>
-                                      <td align="left"
+                                      <td class="mobile-content-p0b" align="left"
                                         style="padding:0;Margin:0;background-color: #FFFFFF; font-size:0; padding-bottom: 16px;">
                                         <!--[if mso]>
                               <table border="0" cellspacing="0" cellpadding="0">
                                 <tr>
                                   <td width="178" style="vertical-align:top; font-size:0; line-height:0;">
                                     <![endif]-->
-                                        <div align="left"
+                                        <div class="content-left" align="left"
                                           style="display:inline-block; max-width:178px; vertical-align:top;width: 100%;">
                                           <table width="100%" cellspacing="0" cellpadding="0" border="0">
                                             <tr>
                                               <td align="center">
-                                                <table width="100%" cellspacing="0" cellpadding="0" border="0"
-                                                  style="max-width: 152px;">
+                                                <table class="course" width="100%" cellspacing="0" cellpadding="0"
+                                                  border="0" style="max-width: 152px;">
                                                   <tr>
                                                     <td align="center">
                                                       <img
@@ -781,13 +804,13 @@
                                         </td>
                                         <td width="178" style="vertical-align:top; font-size:0; line-height:0;">
                                           <![endif]-->
-                                        <div align="center"
+                                        <div class="content-left" align="center"
                                           style="display:inline-block; max-width:178px; vertical-align:top;width: 100%;">
                                           <table width="100%" cellspacing="0" cellpadding="0" border="0">
                                             <tr>
                                               <td align="center">
-                                                <table width="100%" cellspacing="0" cellpadding="0" border="0"
-                                                  style="max-width: 152px;">
+                                                <table class="course" width="100%" cellspacing="0" cellpadding="0"
+                                                  border="0" style="max-width: 152px;">
                                                   <tr>
                                                     <td align="center">
                                                       <img
@@ -820,13 +843,13 @@
                                         </td>
                                         <td width="178" style="vertical-align:top; font-size:0; line-height:0;">
                                           <![endif]-->
-                                        <div align="center"
+                                        <div class="content-right" align="center"
                                           style="display:inline-block; max-width:178px; vertical-align:top;width: 100%;">
                                           <table width="100%" cellspacing="0" cellpadding="0" border="0">
                                             <tr>
                                               <td align="center">
-                                                <table width="100%" cellspacing="0" cellpadding="0" border="0"
-                                                  style="max-width: 152px;">
+                                                <table class="course" width="100%" cellspacing="0" cellpadding="0"
+                                                  border="0" style="max-width: 152px;">
                                                   <tr>
                                                     <td align="center">
                                                       <img
@@ -864,7 +887,7 @@
                                     </tr>
                                     <tr>
                                       <td align="center">
-                                        <img
+                                        <img class="adaptive-img"
                                           style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic"
                                           src="https://raw.githubusercontent.com/Bachinina/816175-play-html-1/master/3-promo/img/feedback.png"
                                           alt="Все курсы" width="300" height="300" />
